@@ -1,95 +1,95 @@
-# 🌍🔤 Automatic Language Detection with Hidden Markov Models (HMM)
+# 🌍🔤 Détection automatique de la langue avec les Modèles de Markov Cachés (HMM)
 
-## 📌 Project Overview
-This project implements an automatic language recognition system based on **Hidden Markov Models (HMMs)**.  
-The goal: **identify the language of a word or text** by exploiting statistical regularities in sequences of letters.
+## 📌 Présentation du projet
+Ce projet met en œuvre un système de **reconnaissance automatique de la langue** basé sur les **Modèles de Markov Cachés (HMM)**.  
+**Objectif : identifier la langue d’un mot ou d’un texte** en exploitant les régularités statistiques des séquences de lettres.
 
-This repository highlights skills in **probabilistic modeling, algorithmics, and Python**, in contexts close to real-world **Natural Language Processing (NLP)** problems.
-
----
-
-## 🎯 Technical Objectives
-- 🧠 Implement a **probabilistic HMM model from scratch**
-- 🔡 Analyze **character sequences** for language classification
-- ⚖️ Compare different modeling strategies and measure their **performance**
-- 📝 Produce a **critical analysis** of the results
+Ce dépôt met en valeur des compétences en **modélisation probabiliste, algorithmique et Python**, dans un contexte proche des problématiques réelles du **Traitement Automatique du Langage (TAL/NLP)**.
 
 ---
 
-## 🧩 Key Skills Demonstrated
-- 📊 **Statistical modeling (HMM)**
-- 🔁 **Probabilistic algorithms**: Forward / Backward
-- 🧬 **Sequence analysis**
-- 🧮 **Matrix computation & linear algebra**
-- 📉 **Model evaluation** (confusion matrices)
-- 🐍 **Scientific Python programming**
+## 🎯 Objectifs techniques
+- 🧠 Implémenter un **modèle probabiliste HMM from scratch**
+- 🔡 Analyser des **séquences de caractères** pour la classification linguistique
+- ⚖️ Comparer différentes stratégies de modélisation et mesurer leurs **performances**
+- 📝 Produire une **analyse critique** des résultats obtenus
 
 ---
 
-## 🛠️ Tools & Technologies
+## 🧩 Compétences mises en avant
+- 📊 **Modélisation statistique (HMM)**
+- 🔁 **Algorithmes probabilistes** : Forward / Backward
+- 🧬 **Analyse de séquences**
+- 🧮 **Calcul matriciel & algèbre linéaire**
+- 📉 **Évaluation de modèles** (matrices de confusion)
+- 🐍 **Python scientifique**
+
+---
+
+## 🛠️ Technologies utilisées
 - 🐍 **Python**
-- 🔢 **NumPy** – matrix computations
-- 🗂️ **Pandas** – data manipulation
-- 📈 **Matplotlib** – visualization
-- ⚙️ **SciPy** – numerical tools
+- 🔢 **NumPy** – calcul matriciel
+- 🗂️ **Pandas** – manipulation de données
+- 📈 **Matplotlib** – visualisation
+- ⚙️ **SciPy** – outils numériques
 
 ---
 
-## 🧪 Methodology
+## 🧪 Démarche et méthodologie
 
-### 1️⃣ Data Preprocessing
-- 🧹 Cleaning textual corpora
-- 🔤 Normalization (lowercase, remove accents/special characters)
-- 🔁 Convert words into **letter sequences (a–z)**
+### 1️⃣ Prétraitement des données
+- 🧹 Nettoyage des corpus textuels
+- 🔤 Normalisation (minuscules, suppression des accents et caractères spéciaux)
+- 🔁 Conversion des mots en **séquences de lettres (a–z)**
 
-### 2️⃣ HMM Model Construction
-Each language is represented by a distinct HMM:
+### 2️⃣ Construction du modèle HMM
+Chaque langue est représentée par un modèle HMM distinct :
 
-- 🔀 **Transition matrix**: probability of moving between letters
-- 🎯 **Emission matrix**: probability of emitting symbols
-- 🚀 **Initial probability vector**
+- 🔀 **Matrice de transition** : probabilité de passage entre lettres
+- 🎯 **Matrice d’émission** : probabilité d’émission des symboles
+- 🚀 **Vecteur de probabilité initiale**
 
-### 3️⃣ Probabilistic Inference
-- ⚙️ Implement **Forward and Backward algorithms**
-- 📊 Calculate the probability that a word/text belongs to a language
-- 🏆 Select the **most probable language**
+### 3️⃣ Inférence probabiliste
+- ⚙️ Implémentation des **algorithmes Forward et Backward**
+- 📊 Calcul de la probabilité qu’un mot ou texte appartienne à une langue
+- 🏆 Sélection de la **langue la plus probable**
 
-### 4️⃣ Evaluation & Analysis
-- 🧪 Classification **word by word** and **text by text**
-- 🧩 Build **confusion matrices**
-- 🔍 Analyze the impact of:
-  - Word length
-  - Internal sequence structure
-  - Emission matrix
-
----
-
-## ⭐ Key Results
-- 📏 Long words are classified **much more accurately**
-- ❓ Short words are **more ambiguous**
-- 🎯 Emission matrix strongly affects performance
-- ⚠️ Identity emission matrix → **significant drop in accuracy**
+### 4️⃣ Évaluation et analyse
+- 🧪 Classification **mot par mot** et **texte par texte**
+- 🧩 Construction de **matrices de confusion**
+- 🔍 Analyse de l’impact de :
+  - la longueur des mots
+  - la structure interne des séquences
+  - la matrice d’émission
 
 ---
 
-## 💼 Value for Recruiters
-This project demonstrates:
-
-- 🧠 Ability to implement **complex mathematical models**
-- 📚 Solid understanding of **probabilistic foundations**
-- 🧪 Rigorous approach to **model evaluation**
-- 🧐 Skill in **analyzing and explaining system limitations**
-- 🚀 Transferable skills for **Machine Learning, NLP, and Data Science**
+## ⭐ Résultats clés
+- 📏 Les mots longs sont classés **beaucoup plus précisément**
+- ❓ Les mots courts sont **plus ambigus**
+- 🎯 La matrice d’émission influence fortement les performances
+- ⚠️ Une matrice d’émission identité → **baisse importante de précision**
 
 ---
 
-## 🚀 Potential Improvements
-- 📚 Enrich the training corpora
-- 🌍 Add **new languages**
-- ⚙️ Optimize **model parameters**
-- 🤖 Introduce **learning algorithms** (Baum-Welch)
+## 💼 Valeur pour un recruteur
+Ce projet démontre :
+
+- 🧠 Capacité à implémenter des **modèles mathématiques complexes**
+- 📚 Maîtrise des **fondements probabilistes**
+- 🧪 Approche rigoureuse de l’**évaluation de modèles**
+- 🧐 Aptitude à **analyser et expliquer les limites d’un système**
+- 🚀 Compétences transférables vers le **Machine Learning, le NLP et la Data Science**
 
 ---
 
-## ✍️ Author
+## 🚀 Pistes d’amélioration
+- 📚 Enrichissement des corpus d’apprentissage
+- 🌍 Ajout de nouvelles langues
+- ⚙️ Optimisation des paramètres du modèle
+- 🤖 Introduction d’**algorithmes d’apprentissage** (Baum-Welch)
+
+---
+
+## ✍️ Auteur
 **TSAGUA YEMEWA Beyoncé**
