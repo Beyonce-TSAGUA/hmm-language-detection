@@ -1,112 +1,95 @@
-🌍🔤 Détection automatique de la langue avec les Modèles de Markov Cachés (HMM)
-📌 Présentation du projet
-Ce projet met en œuvre un système de reconnaissance automatique de la langue basé sur les Modèles de Markov Cachés (Hidden Markov Models – HMM).
-🎯 L’objectif : identifier la langue d’un mot ou d’un texte en exploitant les régularités statistiques des séquences de lettres.
+# 🌍🔤 Automatic Language Detection with Hidden Markov Models (HMM)
 
-Ce dépôt a été conçu pour mettre en valeur des compétences en modélisation probabiliste, algorithmique et Python, dans un contexte proche des problématiques réelles du Traitement Automatique du Langage (TAL/NLP).
+## 📌 Project Overview
+This project implements an automatic language recognition system based on **Hidden Markov Models (HMMs)**.  
+The goal: **identify the language of a word or text** by exploiting statistical regularities in sequences of letters.
 
-🎯 Objectifs techniques
-🧠 Implémenter un modèle probabiliste HMM from scratch
+This repository highlights skills in **probabilistic modeling, algorithmics, and Python**, in contexts close to real-world **Natural Language Processing (NLP)** problems.
 
-🔡 Analyser des séquences de caractères pour la classification linguistique
+---
 
-⚖️ Comparer différentes stratégies de modélisation et mesurer leurs performances
+## 🎯 Technical Objectives
+- 🧠 Implement a **probabilistic HMM model from scratch**
+- 🔡 Analyze **character sequences** for language classification
+- ⚖️ Compare different modeling strategies and measure their **performance**
+- 📝 Produce a **critical analysis** of the results
 
-📝 Produire une analyse critique des résultats obtenus
+---
 
-🧩 Compétences mises en avant
-📊 Modélisation statistique (HMM)
+## 🧩 Key Skills Demonstrated
+- 📊 **Statistical modeling (HMM)**
+- 🔁 **Probabilistic algorithms**: Forward / Backward
+- 🧬 **Sequence analysis**
+- 🧮 **Matrix computation & linear algebra**
+- 📉 **Model evaluation** (confusion matrices)
+- 🐍 **Scientific Python programming**
 
-🔁 Algorithmes probabilistes : Forward / Backward
+---
 
-🧬 Analyse de séquences
+## 🛠️ Tools & Technologies
+- 🐍 **Python**
+- 🔢 **NumPy** – matrix computations
+- 🗂️ **Pandas** – data manipulation
+- 📈 **Matplotlib** – visualization
+- ⚙️ **SciPy** – numerical tools
 
-🧮 Calcul matriciel & algèbre linéaire
+---
 
-📉 Évaluation de modèles (matrices de confusion)
+## 🧪 Methodology
 
-🐍 Python scientifique
+### 1️⃣ Data Preprocessing
+- 🧹 Cleaning textual corpora
+- 🔤 Normalization (lowercase, remove accents/special characters)
+- 🔁 Convert words into **letter sequences (a–z)**
 
-🛠️ Technologies utilisées
-🐍 Python
+### 2️⃣ HMM Model Construction
+Each language is represented by a distinct HMM:
 
-🔢 NumPy – calcul matriciel
+- 🔀 **Transition matrix**: probability of moving between letters
+- 🎯 **Emission matrix**: probability of emitting symbols
+- 🚀 **Initial probability vector**
 
-🗂️ Pandas – manipulation de données
+### 3️⃣ Probabilistic Inference
+- ⚙️ Implement **Forward and Backward algorithms**
+- 📊 Calculate the probability that a word/text belongs to a language
+- 🏆 Select the **most probable language**
 
-📈 Matplotlib – visualisation
+### 4️⃣ Evaluation & Analysis
+- 🧪 Classification **word by word** and **text by text**
+- 🧩 Build **confusion matrices**
+- 🔍 Analyze the impact of:
+  - Word length
+  - Internal sequence structure
+  - Emission matrix
 
-⚙️ SciPy – outils numériques
+---
 
-🧪 Démarche et méthodologie
-1️⃣ Prétraitement des données
-🧹 Nettoyage des corpus textuels
+## ⭐ Key Results
+- 📏 Long words are classified **much more accurately**
+- ❓ Short words are **more ambiguous**
+- 🎯 Emission matrix strongly affects performance
+- ⚠️ Identity emission matrix → **significant drop in accuracy**
 
-🔤 Normalisation (minuscules, suppression des accents, caractères spéciaux)
+---
 
-🔁 Conversion des mots en séquences de lettres (a–z)
+## 💼 Value for Recruiters
+This project demonstrates:
 
-2️⃣ Construction du modèle HMM
-Un modèle HMM est construit pour chaque langue :
+- 🧠 Ability to implement **complex mathematical models**
+- 📚 Solid understanding of **probabilistic foundations**
+- 🧪 Rigorous approach to **model evaluation**
+- 🧐 Skill in **analyzing and explaining system limitations**
+- 🚀 Transferable skills for **Machine Learning, NLP, and Data Science**
 
-🔀 Matrice de transition : probabilité de passage entre lettres
+---
 
-🎯 Matrice d’émission : probabilité d’émission des symboles
+## 🚀 Potential Improvements
+- 📚 Enrich the training corpora
+- 🌍 Add **new languages**
+- ⚙️ Optimize **model parameters**
+- 🤖 Introduce **learning algorithms** (Baum-Welch)
 
-🚀 Vecteur de probabilité initiale
+---
 
-Chaque langue est représentée par un modèle statistique distinct.
-
-3️⃣ Inférence probabiliste
-⚙️ Implémentation des algorithmes Forward et Backward
-
-📊 Calcul de la probabilité qu’un mot/texte appartienne à une langue
-
-🏆 Sélection de la langue la plus probable
-
-4️⃣ Évaluation et analyse
-🧪 Classification mot par mot et texte par texte
-
-🧩 Construction de matrices de confusion
-
-🔍 Analyse de l’impact :
-
-de la longueur des mots
-
-de la structure interne des séquences
-
-de la matrice d’émission
-
-⭐ Résultats clés
-📏 Les mots longs sont beaucoup mieux classés
-
-❓ Les mots courts sont plus ambigus
-
-🎯 La matrice d’émission influence fortement les performances
-
-⚠️ Une matrice d’émission identité → forte baisse de précision
-
-💼 Valeur pour un recruteur
-Ce projet démontre :
-
-🧠 Une capacité à implémenter des modèles mathématiques complexes
-
-📚 Une maîtrise solide des fondements probabilistes
-
-🧪 Une approche rigoureuse de l’évaluation de modèles
-
-🧐 Une aptitude à analyser et expliquer les limites d’un système
-
-🚀 Des compétences transférables vers le Machine Learning, le NLP et la Data Science
-
-🚀 Pistes d’amélioration
-📚 Enrichissement des corpus d’apprentissage
-
-🌍 Ajout de nouvelles langues
-
-⚙️ Optimisation des paramètres du modèle
-
-🤖 Introduction d’algorithmes d’apprentissage (Baum-Welch)
-
-✍️ Auteur
-TSAGUA YEMEWA Beyoncé
+## ✍️ Author
+**TSAGUA YEMEWA Beyoncé**
